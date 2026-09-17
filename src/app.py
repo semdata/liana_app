@@ -6,6 +6,12 @@ from validate import *
 from update import *
 from delete import *
 from login import *
+import sys
+import os
+
+# Adds the 'src' directory to Python's module search path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 
 st.title("Welcome to your Library!")
 if "engine" in st.session_state:
